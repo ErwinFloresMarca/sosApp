@@ -7,9 +7,14 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('../views/HomePage.vue')
   },
   {
-    name: 'About',
-    path: '/about',
-    component: () => import('../views/AboutPage.vue')
+    name: 'LineasDeOrientacion',
+    path: '/lineas-de-orientacion',
+    component: () => import('../views/lineasDeOrientacion.vue')
+  },
+  {
+    name: 'LineasDeEmergencia',
+    path: '/lineas-de-emergencia',
+    component: () => import('../views/lineasDeEmergencia.vue')
   }
 ];
 
