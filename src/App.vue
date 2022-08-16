@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import ReloadToast from './components/ReloadToast.vue';
-import Menubar from 'primevue/menubar';
 import { ref } from 'vue';
 const items = ref([
   {
@@ -26,14 +25,41 @@ const items = ref([
     <div class="content-div">
       <router-view></router-view>
     </div>
-    <Menubar :model="items"> </Menubar>
+    <div class="menu-container">
+      <router-link
+        v-for="item in items"
+        :key="item.to"
+        v-slot="{ navigate, isActive, isExactActive }"
+        :to="item.to"
+        custom
+      >
+        <div
+          class="flex flex-wrap flex-column justify-content-center"
+          :class="{
+            'p-button': true,
+            'p-button-secondary': isActive,
+            'p-button-secondary': isExactActive
+          }"
+          style="height: 80px"
+          @click="navigate"
+        >
+          <i :class="item.icon"></i>{{ item.label }}
+        </div>
+      </router-link>
+    </div>
   </div>
   <ReloadToast id="reload-toast" />
 </template>
 
 <style scoped>
 .content-div {
-  height: calc(100vh - 58px);
+  height: calc(100vh - 80px);
+}
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  height: 80px;
+  grid-gap: 2px;
 }
 body {
   color: var(--text-color);
