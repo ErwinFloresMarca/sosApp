@@ -1,5 +1,8 @@
 <template>
-  <div>inicio</div>
+  <div class="text-center">
+    <img class="w-full" src="/512.png" />
+    <h2>INICIO</h2>
+  </div>
 </template>
 
 <script setup></script>
