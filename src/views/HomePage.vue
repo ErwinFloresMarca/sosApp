@@ -1,7 +1,8 @@
 <template>
   <div class="text-center">
     <img class="w-full" src="/512.png" />
-    <h2>INICIO</h2>
+    <h2>INICIO1
+    </h2>
   </div>
 </template>
 
