@@ -7,6 +7,11 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('../views/HomePage.vue')
   },
   {
+    name: 'TipoViolencia',
+    path: '/tipo-violencia/:id',
+    component: () => import('../views/tipoViolencia.vue')
+  },
+  {
     name: 'LineasDeOrientacion',
     path: '/lineas-de-orientacion',
     component: () => import('../views/lineasDeOrientacion.vue')
