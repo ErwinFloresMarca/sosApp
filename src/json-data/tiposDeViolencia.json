@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "img": "",
-        "titulo": "VIOLENCIA FISICA Y/O PSICOLOGICA",
+        "img": "/imgs/violenciaFisicaSpicologica.webp",
+        "titulo": "VIOLENCIA FISICA Y PSICOLOGICA",
         "descripcion": "texto",
         "ejemplos": [
             "ejemplo 1",
@@ -34,7 +34,7 @@
     },
     {
         "id": 2,
-        "img": "",
+        "img": "/imgs/otrasViolencias.png",
         "titulo": "VIOLENCIA OTRA",
         "descripcion": "texto",
         "ejemplos": [

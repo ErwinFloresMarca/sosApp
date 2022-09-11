@@ -6,7 +6,7 @@
     <Carousel :value="tiposDeViolencia">
       <template #item="{ data }">
         <div class="flex flex-wrap flex-column">
-          <img class="w-full" :src="data.img" alt="error" />
+          <img class="w-full img-tipo-violencia" :src="data.img" alt="error" />
           <strong>{{ data.titulo }}</strong>
           <Button
             class="p-button-warning w-full"
@@ -44,5 +44,10 @@ const onClickTipoViolencia = (id) => {
   width: 100%;
   padding: 10px;
   margin: 0px;
+}
+.img-tipo-violencia {
+  border-radius: 15px;
+  margin-bottom: 5px;
+  height: 185px;
 }
 </style>
